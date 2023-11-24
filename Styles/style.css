@@ -12,12 +12,12 @@ body {
 
 @font-face {
     font-family: KeaniaOne;
-    src: url(Fonts/KeaniaOne-Regular.ttf);
+    src: url(../Fonts/KeaniaOne-Regular.ttf);
 }
 
 @font-face {
     font-family: Kenia;
-    src: url(Fonts/Kenia-Regular.ttf);
+    src: url(../Fonts/Kenia-Regular.ttf);
 }
 
 
@@ -35,6 +35,9 @@ body {
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 #headerContenido {
@@ -62,6 +65,7 @@ body {
 #boxNavUl {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 .nav1 {
     margin-right: 15px;
@@ -279,6 +283,7 @@ body {
     border: 0;
     background-color: transparent;
     color: #484848;
+    transition: .2s;
 }
 #paginasNumeros {
     display: flex;
@@ -292,9 +297,16 @@ body {
     border: 0;
     background-color: transparent;
     color: #484848;
+    transition: .2s;
 }
-.paginasNumero:hover, .paginasFlecha:hover {
+.paginasNumero:hover {
     color: #A621C7;
+    text-decoration: underline;
+    transition: .2s;
+}
+.paginasFlecha:hover {
+    color: #A621C7;
+    transition: .2s;
 }
 
 
@@ -556,9 +568,14 @@ margin-left: 3px;
 /******          @media          ******/
 
 /******          HEADER          ******/
-
-@media (max-width:1024){
-    .header {
+@media (max-width:1920){
+    #headerR {
+        display: none;
+    }
+}
+@media (max-width:1440){
+    #headerR {
+        display: block;
     }
 }
 
