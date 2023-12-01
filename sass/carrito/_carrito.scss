@@ -1,0 +1,146 @@
+#carrito {
+    margin: 10%;
+    margin-top: 2%;
+    #carritoBackground {
+        position: relative;
+        background-color: #EAEAEA;
+        border-radius: 50px;
+        padding: 225px 7% 225px;
+        z-index: 10;
+        margin-bottom: -260px;
+        width: 100%;
+        #carritoTextBox {
+            display: flex;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translatex(-50%);
+            width: 722px;
+            #carrito {
+                font-size: 100px;
+                font-family: 'Kenia';
+                font-weight: 100;
+                margin: 0px;
+            }
+        }
+        #carritoBox {
+            width: 100%;
+            #carritoBox1 {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                #descuentoBox {
+                    #descuentoText {
+                    }
+                    #descuentoForm {
+                    }
+                }
+                #carritoPrecio {
+                    display: flex;
+                    #carritoPrecioDato {
+                        padding: 0;
+                    }
+                    #carritoPrecioMonto {
+                        padding-left: 30px;
+                    }
+                }
+            }
+            #carritoBox2 {
+                #productosCarrito {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 15px;
+                    height: 500px;
+                    .productoCarrito {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #ffffff;
+                        height: 500PX;
+                        border-radius: 30px;
+                        box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+            #carritoBox3 {
+                display: flex;
+                #shopline1 {
+                    display: flex;
+                    position: absolute;
+                    width: 64%;
+                    height: 100px;
+                    bottom: 70px;
+                    justify-content: space-between;
+                    .shoplineEtapas {
+                        display: flex;
+                        width: 30%;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        #shoplineEtapasCarrito {
+                            
+                        }
+                        #shoplineEtapasDatos {
+
+                        }
+                        #shoplineEtapasPago {
+                            
+                        }
+                    }
+                }
+                #shopline2 {
+                    display: flex;
+                    position: absolute;
+                    width: 86%;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 16px;
+                    height: 100px;
+                    bottom: 53px;
+                    .shoplineHrBox {
+                        width: 20%;
+                        .shoplineHr {
+                            width: 100%;
+                            height: 1px;
+                            margin: 0;
+                            background-color: #484848;
+                        }
+                        .shoplineHr4 {
+                            display: none;
+                        }
+                    }
+                    .shoplineCircleBox {
+                        .shoplineCircle {
+                            height: 30px;
+                            width: 30px;
+                            background-color: #D9D9D9;
+                            border-radius: 100px;
+                            border: 1px solid #484848;
+                        }
+                        .shoplineCircle3 {
+                            display: none;
+                        }
+                    }
+                }
+                #botonSiguiente {
+                    #siguiente {
+                        position: absolute;
+                        width: 250px;
+                        height: 100px;
+                        border-radius: 10px;
+                        background-color: #FFF736;
+                        font-family: 'kenia';
+                        font-size: 40px;
+                        font-weight: 1;
+                        color: #000;
+                        border: 0;
+                        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+                        transition: .3s;
+                        right: 7%;
+                        bottom: 53px;
+                    }
+                }                
+            }
+        }
+    }
+}

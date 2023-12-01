@@ -1,0 +1,88 @@
+#header{
+    display: flex;
+    max-width: 100%;
+    background-color: #FFF736;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#headerContenido {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#boxName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#boxName a {
+    text-decoration: none;
+}
+.name {
+    font-size: 65px;
+    color: #A621C7;
+    font-family: 'KeaniaOne';
+    font-weight:100;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+#boxNavUl {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.nav1 {
+    margin-right: 15px;
+    background-color: #875B92;
+    border-radius: 7px;
+    height: 30px;
+    width: 150px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+        a {
+        color: #ffffff;
+        font-family: 'Kenia';
+        font-weight: 0;
+        font-size: 25px;
+        font-weight: 100;
+        text-decoration: none;
+        transform: translatey(-3px);
+    }
+}
+
+.nav2 a {
+    color: black;
+    text-decoration: none;
+}
+.nav2 i {
+    font-size: 18px;
+    transform: translatey(2px);
+}
+
+#boxRedes {
+    display: flex;
+}
+.redes {
+    display: flex;
+    align-items: center;
+}
+.redes ion-icon {
+    font-size: 30px;
+    margin-left: 3px;
+    color: #000;
+}
+#boxNavUlR {
+    display: none;
+}
