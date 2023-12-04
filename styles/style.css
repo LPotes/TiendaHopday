@@ -95,6 +95,88 @@
   display: none;
 }
 
+/* RESPONSIVE */
+@media (max-width: 1440px) {
+  #headerContenido {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) 100px;
+  }
+  nav {
+    grid-column: 5/6;
+    display: flex;
+    justify-content: center;
+  }
+  #boxRedes {
+    display: flex;
+    justify-content: center;
+  }
+  #boxNavUlR {
+    display: flex;
+    margin-bottom: 0;
+    background-color: #875B92;
+    border-radius: 7px;
+    height: 30px;
+    width: 150px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    padding: 0;
+  }
+  #boxNavUlR .dropdown-toggle {
+    color: #ffffff;
+    font-family: "Kenia";
+    font-weight: 0;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    transform: translatey(1px);
+    padding: 0;
+  }
+  #boxNavUl {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #header {
+    padding: 20px;
+  }
+  .name {
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  #boxNavUlR {
+    width: 100%;
+    min-width: 90px;
+  }
+}
+@media (max-width: 425px) {
+  #header {
+    padding: 5px;
+  }
+  #headerContenido {
+    grid-template-columns: repeat(5, 1fr) 70px;
+  }
+  #boxNavUlR {
+    height: 25px;
+  }
+  #boxNavUlR a {
+    font-size: 18px;
+  }
+  .redes {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media (max-width: 375px) {
+  .name {
+    font-size: 40px;
+    margin-bottom: 2px;
+  }
+  #headerContenido {
+    grid-template-columns: repeat(5, 1fr) 50px;
+  }
+}
 .footer {
   margin-top: auto;
   display: flex;
@@ -179,6 +261,7 @@
   font-size: 22px;
   width: 80%;
   color: #D9D9D9;
+  margin: 0;
 }
 
 #h_line {
@@ -732,95 +815,14 @@ body {
 
 @font-face {
   font-family: KeaniaOne;
-  src: url(../Fonts/KeaniaOne-Regular.ttf);
+  src: url(../fonts/KeaniaOne-Regular.ttf);
 }
 @font-face {
   font-family: Kenia;
-  src: url(../Fonts/Kenia-Regular.ttf);
+  src: url(../fonts/Kenia-Regular.ttf);
 }
 /******          @media          ******/
 /******          HEADER          ******/
-@media (max-width: 1440px) {
-  #headerContenido {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr) 100px;
-  }
-  nav {
-    grid-column: 5/6;
-    display: flex;
-    justify-content: center;
-  }
-  #boxRedes {
-    display: flex;
-    justify-content: center;
-  }
-  #boxNavUlR {
-    display: flex;
-    margin-bottom: 0;
-    background-color: #875B92;
-    border-radius: 7px;
-    height: 30px;
-    width: 150px;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-    padding: 0;
-  }
-  #boxNavUlR a {
-    color: #ffffff;
-    font-family: "Kenia";
-    font-weight: 0;
-    font-size: 20px;
-    font-weight: 100;
-    text-decoration: none;
-    transform: translatey(1px);
-    padding: 0;
-  }
-  #boxNavUl {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  #header {
-    padding: 20px;
-  }
-  .name {
-    font-size: 50px;
-    margin-bottom: 5px;
-  }
-  #boxNavUlR {
-    width: 100%;
-    min-width: 90px;
-  }
-}
-@media (max-width: 425px) {
-  #header {
-    padding: 5px;
-  }
-  #headerContenido {
-    grid-template-columns: repeat(5, 1fr) 70px;
-  }
-  #boxNavUlR {
-    height: 25px;
-  }
-  #boxNavUlR a {
-    font-size: 18px;
-  }
-  .redes {
-    height: 25px;
-    width: 25px;
-  }
-}
-@media (max-width: 375px) {
-  .name {
-    font-size: 40px;
-    margin-bottom: 2px;
-  }
-  #headerContenido {
-    grid-template-columns: repeat(5, 1fr) 50px;
-  }
-}
 /******          Tienda          ******/
 /******          FOOTER          ******/
 @media (max-width: 1440px) {
