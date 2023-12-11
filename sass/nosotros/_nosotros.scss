@@ -1,0 +1,143 @@
+@mixin dato {
+    display: flex;
+    .dato {
+        width: 80%;
+        min-width: 550px;
+        height: auto;
+        border-radius: 30px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #875B92;
+        border: 5px solid #ccc;
+        box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.9);
+        .datoTitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            font-family: 'Keania One';
+            font-size: 30px;
+        }
+        .datoContent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}
+
+#datos {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/Bgdegradado.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    #datosContenido {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        background-color: #EAEAEA;
+        border-radius: 50px;
+        padding: 30px;
+        z-index: 10;
+        max-width: 1596px;
+        gap: 15px;
+        margin-top: -100px;
+        .datoBox1 {
+            @include dato();
+            justify-content: left;
+        }
+        .datoBox2 {
+            @include dato();
+            justify-content: right;
+        }
+    }
+}
+
+/*RESPONSIVE*/
+
+@media (max-width:1024px) {
+    #datos {
+        #datosContenido {
+            width: 90%;
+            margin-top: -60px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #datos {
+        #datosContenido {
+            margin-top: -45px;
+            .datoBox1 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    .datoTitle {
+                        font-size: 25px;
+                    }
+                    .datoContent {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .datoBox2 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    .datoTitle {
+                        font-size: 25px;
+                    }
+                    .datoContent {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    #datos {
+        #datosContenido {
+            padding: 15px;
+            gap: 7.5px;
+            margin-top: -30px;
+            border-radius: 40px;
+            .datoBox1 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    padding: 15px;
+                    .datoTitle {
+                        font-size: 20px;
+                    }
+                    .datoContent {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .datoBox2 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    padding: 15px;
+                    .datoTitle {
+                        font-size: 20px;
+                    }
+                    .datoContent {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

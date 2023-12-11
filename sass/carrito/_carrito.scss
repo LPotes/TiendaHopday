@@ -1,14 +1,19 @@
 #carrito {
-    margin: 10%;
-    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../images/Bgdegradado.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     #carritoBackground {
         position: relative;
         background-color: #EAEAEA;
         border-radius: 50px;
         padding: 225px 7% 225px;
         z-index: 10;
-        margin-bottom: -260px;
-        width: 100%;
+        margin-top: 50px;
+        width: 70%;
         #carritoTextBox {
             display: flex;
             position: absolute;
@@ -16,7 +21,7 @@
             left: 50%;
             transform: translatex(-50%);
             width: 722px;
-            #carrito {
+            #carritoTitle {
                 font-size: 100px;
                 font-family: 'Kenia';
                 font-weight: 100;

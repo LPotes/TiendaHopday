@@ -1,167 +1,297 @@
-.tienda {
+#tienda {
     display: flex;
+    justify-content: center;
+    height: 100%;
     width: 100%;
-    justify-content: center;
+    background-image: url(../../images/Bgdegradado.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    #tiendaContenido {
+        display: flex;
+        display: inline-flex;
+        flex-direction: column;
+        width: 70%;
+        background-color: #EAEAEA;
+        border-radius: 50px;
+        padding: 30px;
+        z-index: 10;
+        max-width: 1596px;
+        margin-top: -100px;
+        #searchbarContenedor {
+            display: flex;
+            justify-content: center;
+            #searchbar {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                max-width: 478px;
+                & input {
+                    width: 478px;
+                    height: 40px;
+                    border-radius: 100px;
+                    border: 0;
+                    font-size: 20px;
+                    padding-left: 40px;
+                    outline-color: rgba(0, 0, 0, 0.5);
+                    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+                }
+                & i{
+                    position: absolute;
+                    color: rgba(0, 0, 0, 0.5);
+                    top: 50%;
+                    transform: translatey(-50%);
+                    left: 10px;
+                }
+            }
+        }
+        #filtrosBoxContenedor{
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            #filtrosBox {
+                display: flex;
+                justify-content: space-between;
+                width: 95%;
+                #textTinedaBox {
+                    display: flex;
+                    align-items: center;
+                    grid-column: 1/6;
+                    #textTienda {
+                        font-family: 'Keania One';
+                        font-weight: 100;
+                        font-size: 23px;
+                        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+                        margin: 0;
+                    }
+                }
+                #filtros {
+                    display: flex;
+                    width: 500px;
+                    justify-content: space-between;
+                    .filtro {
+                        display: flex;
+                        align-items: center;
+                        select {
+                            font-family: "KeaniaOne";
+                            font-weight: 100;
+                            background-color: #875B92;
+                            border-radius: 7px;
+                            height: 50px;
+                            width: auto;
+                            padding: 10px;
+                            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+                        }
+                    }
+                }
+                #botonesFiltros {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    min-width: 110px;
+                    max-width: 110px;
+                    margin-left: 10px;
+                    .botonFiltro {
+                        display: flex;
+                        border-radius: 100px;
+                        height: 50px;
+                        width: 50px;
+                        background-color: #FFF736;
+                        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+                        border: 0;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        #productos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 15px;
+            .producto {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ffffff;
+                height: 500px;
+                border-radius: 30px;
+                box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+            }
+        }
+        #paginasTienda {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            align-items: center;
+            .paginasFlechas {
+                .paginasFlecha {
+                    padding: 5px;   
+                    font-size: 25px;
+                    font-weight: 100;
+                    text-align: center;
+                    text-decoration: none;
+                    border: 0;
+                    background-color: transparent;
+                    color: #484848;
+                    transition: .2s;
+                    &:hover {
+                        color: #A621C7;
+                        transition: .2s;
+                    }
+                }
+            }
+            #paginasTexto {
+                padding: 5px;
+                color: #484848;
+                & p {
+                    font-size: 25px;
+                    margin: 0;
+                }
+            }
+            #paginasNumeros {
+                display: flex;
+                .paginasNumero {
+                    padding: 5px;
+                    font-size: 25px;
+                    font-weight: 100;
+                    text-align: center;
+                    text-decoration: none;
+                    border: 0;
+                    background-color: transparent;
+                    color: #484848;
+                    transition: .2s;
+                    &:hover {
+                        color: #A621C7;
+                        text-decoration: underline;
+                        transition: .2s;
+                    }
+                }
+            }
+        }
+    }
 }
-.tiendaContenido {
-    display: flex;
-    display: inline-flex;
-    flex-direction: column;
-    width: 70%;
-    background-color: #EAEAEA;
-    border-radius: 50px;
-    padding: 30px;
-    margin-top: -100px;
-    margin-bottom: -100px;
-    z-index: 10;
-    max-width: 1596px;
-}
-#searchbarContenedor {
-    display: flex;
-    justify-content: center;
-}
-#searchbar {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-#searchbar input {
-    width: 500px;
-    height: 40px;
-    border-radius: 100px;
-    border: 0;
-    font-size: 20px;
-    padding-left: 40px;
-    outline-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
-}
-#searchbar input::placeholder {
-    font-size: 20px;
-}
-#searchbar i{
-    position: absolute;
-    color: rgba(0, 0, 0, 0.5);
-    top: 50%;
-    transform: translatey(-50%);
-    left: 10px;
-}
-#filtrosBoxContenedor{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-#filtrosBox {
-    display: flex;
-    width: 95%;
-    justify-content: space-between;
-}
-#textTineda_box {
-    display: flex;
-    align-items: center;
-}
-#textTienda {
-    font-family: 'Kenia';
-    font-weight: 100;
-    font-size: 30px;
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-    margin: 0;
-}
-#filtros {
-    display: flex;
-    width: 500px;
-    justify-content: space-around;
-}
-.filtro {
-    display: flex;
-    align-items: center;
 
+/* RESPONSIVE */
+
+@media (max-width:1440px){
+    #tienda {
+        #tiendaContenido {
+            #filtrosBoxContenedor{
+                #filtrosBox {
+                    #textTinedaBox {
+                        display: none;
+                    }
+                    #filtros {
+                        display: flex;
+                        width: 550px;
+                    }
+                }
+            }
+            #productos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }    
 }
-.filtro select {
-    background-color: #875B92;
-    border-radius: 7px;
-    height: 50px;
-    width: 150px;
-    padding: 10px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+@media (max-width:1024px){
+    #tienda {
+        #tiendaContenido {
+            width: 90%;
+            margin-top: -60px;
+        }
+    }
 }
-#botonesFiltros {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 120px;
+@media (max-width:768px){
+    #tienda {
+        #tiendaContenido {
+            margin-top: -45px;
+            #filtrosBoxContenedor{
+                #filtrosBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+                    #filtros {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-around;
+                        gap: 10px;
+                        .filtro {
+                            display: flex;
+                            align-items: center;
+                            select {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    #botonesFiltros {
+                        justify-content: center;
+                        max-width: none;
+                        margin: 0;
+                        gap: 10px;
+                        transform: scale(.8);
+                    }
+                }
+            }
+        }
+    }    
 }
-.botonFiltro {
-    display: flex;
-    border-radius: 100px;
-    height: 50px;
-    width: 50px;
-    background-color: #FFF736;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
-    border: 0;
-    justify-content: center;
-    align-items: center;
-}
-#productos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 15px;
-}
-.producto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-    height: 500px;
-    border-radius: 30px;
-    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
-}
-#paginasTienda {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-    align-items: center;
-}
-#paginasTexto {
-    padding: 5px;
-    color: #484848;
-}
-#paginasTexto p {
-    font-size: 25px;
-    margin: 0;
-}
-.paginasFlecha {
-    padding: 5px;   
-    font-size: 25px;
-    font-weight: 100;
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    background-color: transparent;
-    color: #484848;
-    transition: .2s;
-}
-#paginasNumeros {
-    display: flex;
-}
-.paginasNumero {
-    padding: 5px;
-    font-size: 25px;
-    font-weight: 100;
-    text-align: center;
-    text-decoration: none;
-    border: 0;
-    background-color: transparent;
-    color: #484848;
-    transition: .2s;
-}
-.paginasNumero:hover {
-    color: #A621C7;
-    text-decoration: underline;
-    transition: .2s;
-}
-.paginasFlecha:hover {
-    color: #A621C7;
-    transition: .2s;
+@media (max-width:425px){
+    #tienda {
+        #tiendaContenido {
+            padding: 15px;
+            margin-top: -30px;
+            border-radius: 35px;
+            #searchbarContenedor {
+                #searchbar {
+                    width: 100%;
+                    transform: scale(.9);
+                    & i {
+                        display: none;
+                    }
+                }
+            }
+            #filtrosBoxContenedor{
+                padding: 10px;
+                #filtrosBox {
+                    #filtros {
+                        gap: 5px;
+                        .filtro {
+                            select {
+                                padding: 2px;
+                                font-size: 10px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            #productos {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            #paginasTienda {
+                padding-top: 10px;
+                .paginasFlechas {
+                    .paginasFlecha { 
+                        font-size: 20px;
+                    }
+                }
+                #paginasTexto {
+                    & p {
+                        font-size: 20px;
+                    }
+                }
+                #paginasNumeros {
+                    .paginasNumero {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }    
 }

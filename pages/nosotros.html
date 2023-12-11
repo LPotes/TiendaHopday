@@ -20,7 +20,7 @@
             <div id="boxName">
                 <a href="../index.html"><h1 class="name">hopday</h1></a>
             </div>
-            <nav>
+            <nav id="nav">
                 <ul id="boxNavUl">
                     <li class="nav1"><a href="../index.html">Tienda</a></li>
                     <li class="nav1"><a href="nosotros.html">Nosotros</a></li>
@@ -31,7 +31,7 @@
                 <ul id="boxNavUlR">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tienda
+                            Nosotros
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="../index.html">Tienda</a></li>
@@ -54,73 +54,74 @@
 
     <!--Main Start-->
     <main>  
-    <!--Banner Start-->
-        <section class="banner">
-            <div class="textoBanerBox">
-                <h1 class="textoBaner">Conocenos</h1>
-            </div>
-            <div class="img_banner">
-                <img src="#" alt="img_banner">
-            </div>
+        <!--Banner Start-->
+        <section id="banner">
+            <video autoplay loop id="bannerVideoBox">
+                <source src="../videos/Conocenos.mp4" type="video/mp4">
+            </video>
         </section>
-    <!--Banner Ends-->
+        <!--Banner Ends-->
     
-    <!--Datos Start-->
-        <section class="datos">
-            <article class="dato">
-                <h2 class="tituloDato">Quienes somos</h2>
-                <p class="textoDato">Somos una empresa especializada en la venta de componentes de PC de todas las calidades, desde productos asequibles y funcionales hasta soluciones de gama alta para satisfacer todas tus necesidades informáticas.</p>
-            </article>
-            <article class="dato">
-                <h2 class="tituloDato">Nuestra misión</h2>
-                <p class="textoDato">Nuestra misión es brindar a nuestros clientes acceso a la última tecnología y una amplia gama de opciones, sin importar su presupuesto. Creemos que la potencia de la tecnología debería ser accesible para todos, y estamos comprometidos a ofrecer productos de alta calidad a precios competitivos.</p>
-            </article>
-            <article class="dato">
-                <h2 class="tituloDato">Nuestra visión</h2>
-                <p class="textoDato">En Hopday, aspiramos a ser líderes en el mundo de la informática y tecnología, siendo reconocidos como el destino preferido para entusiastas de la tecnología y profesionales de la informática. Nuestra visión es construir un ecosistema informático donde la calidad, la asequibilidad y la innovación se unan para empoderar a cada individuo a alcanzar su máximo potencial tecnológico.</p>
-            </article>
-            <article class="dato">
-                <h2 class="tituloDato">Confía en nosotros</h2>
-                <p class="textoDato">Hopday se destaca por su compromiso con la excelencia, la calidad, la ética empresarial y la satisfacción del cliente. Nuestro equipo altamente competente está dedicado a brindar soluciones tecnológicas confiables y asequibles. Puedes confiar en nosotros para satisfacer tus necesidades informáticas y tecnológicas de manera efectiva y segura.</p>
-            </article>
-        </section>
-
-    <!--Datos End-->
+        <!--Datos Start-->
+        <div id="datos">
+            <section id="datosContenido">
+                <div class="datoBox1">
+                    <article class="dato">
+                        <h2 class="datoTitle">Quienes somos</h2>
+                        <p class="datoContent">Somos una empresa especializada en la venta de componentes de PC de todas las calidades, desde productos asequibles y funcionales hasta soluciones de gama alta para satisfacer todas tus necesidades informáticas.</p>
+                    </article>
+                </div>
+                <div class="datoBox2">
+                    <article class="dato">
+                        <h2 class="datoTitle">Nuestra misión</h2>
+                        <p class="datoContent">Nuestra misión es brindar a nuestros clientes acceso a la última tecnología y una amplia gama de opciones, sin importar su presupuesto. Creemos que la potencia de la tecnología debería ser accesible para todos, y estamos comprometidos a ofrecer productos de alta calidad a precios competitivos.</p>
+                    </article>
+                </div>
+                <div class="datoBox1">
+                    <article class="dato">
+                        <h2 class="datoTitle">Nuestra visión</h2>
+                        <p class="datoContent">En Hopday, aspiramos a ser líderes en el mundo de la informática y tecnología, siendo reconocidos como el destino preferido para entusiastas de la tecnología y profesionales de la informática. Nuestra visión es construir un ecosistema informático donde la calidad, la asequibilidad y la innovación se unan para empoderar a cada individuo a alcanzar su máximo potencial tecnológico.</p>
+                    </article>
+                </div>
+                <div class="datoBox2">
+                    <article class="dato">
+                        <h2 class="datoTitle">Confía en nosotros</h2>
+                        <p class="datoContent">Hopday se destaca por su compromiso con la excelencia, la calidad, la ética empresarial y la satisfacción del cliente. Nuestro equipo altamente competente está dedicado a brindar soluciones tecnológicas confiables y asequibles. Puedes confiar en nosotros para satisfacer tus necesidades informáticas y tecnológicas de manera efectiva y segura.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <!--Datos End-->
     </main>
     <!--Main Ends-->
 
     <!--Footer Start-->
-    <footer class="footer">
-        <section class="footerContenido">
-            <div class="footer-1">
-                <div id="logo_footer">
-                    <img src="../images/LOGO-Marca.png" alt="logo_marca">
+    <footer id="footer">
+        <div id="footerContenido">
+            <div id="footer-1">
+                <div id="footerLogo">
+                    <img src="../images/LOGO-Marca.png" alt="logoMarca">
                 </div>
-                <article id="acceso_rapido">
-                    <h3 class="acceso-rapido_title title_sec">Acceso Rapido</h3>
-                    <ul class="acceso-rapido_lista">
+                <div id="acceso_rapido">
+                    <h3 id="acceso_rapidoTitle">Acceso Rapido</h3>
+                    <ul id="acceso_rapidoLista">
                         <li><a href="../index.html">> Tienda</a></li>
-                        <li><a href="../Pages/Nosotros.html">> Nosotros</a></li>
-                        <li><a href="../Pages/Consultas.html">> Consultas</a></li>
-                        <li><a href="../Pages/Contacto.html">> Contacto</a></li>
-                        <li><a href="../Pages/Carrito.html">> Carrito</a></li>
+                        <li><a href="nosotros.html">> Nosotros</a></li>
+                        <li><a href="consultas.html">> Consultas</a></li>
+                        <li><a href="contacto.html">> Contacto</a></li>
+                        <li><a href="carrito.html">> Carrito</a></li>
                     </ul>
-                </article>
+                </div>
                 <div id="v-line"></div>
                 <div id="descripcion_footer">
-                    <h3 class="descripcion-footer_title title_sec">De HOPDAY para la comunidad</h3>
-                    <p class="descripcion-footer_text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut zabore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit“
+                    <h3 id="descripcion_footerTitle">De HOPDAY para la comunidad</h3>
+                    <p id="descripcion_footerText">
+                        En Hopday, nos enorgullece ofrecer productos de alta calidad a la comunidad, seleccionados cuidadosamente para satisfacer tus necesidades. Nuestra misión es proporcionar soluciones confiables y asequibles para apoyar a los apasionados de la tecnología y electrónica. ¡Gracias por ser parte de nuestra comunidad!
                     </p>
                 </div>
             </div>
             <div id="h_line"></div>
-            <div class="footer-2">
+            <div id="footer-2">
                 <div id="derechos">
                     <h4>© <a href="../index.html" id="hopday_derechos">Hopday</a>  Todos los derechos revervados</h4>
                 </div>
@@ -128,7 +129,7 @@
                     <h4>Diseñado por Lucas Potes</h4> <img src="../images/LOGO-Potes.png" alt="logo_personal">
                 </div>
             </div>
-        </section>
+        </div>
     </footer>
     <!--Footer Ends-->
 

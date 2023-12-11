@@ -1,7 +1,7 @@
 @import "header";
 @import "footer";
-@import "reset";
 @import "banner";
+@import "reset";
 
 @import "tienda/tienda";
 @import "nosotros/nosotros";
@@ -9,191 +9,16 @@
 @import "contacto/contacto";
 @import "carrito/carrito";
 
+
 @font-face {
     font-family: KeaniaOne;
     src: url(../fonts/KeaniaOne-Regular.ttf);
 }
 @font-face {
-    font-family: Kenia;
-    src: url(../fonts/Kenia-Regular.ttf);
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
-
-/******          @media          ******/
-
-/******          HEADER          ******/
-
-
-
-/******          Tienda          ******/
-
-
-/******          FOOTER          ******/
-
-
-
-
-@media (max-width:1440px) {
-    #acceso_rapido {
-        padding-left: 50px;
-        
-    }
-    .acceso-rapido_lista {
-        padding: 0;
-    }
-    #descripcion_footer .descripcion-footer_title{
-        font-size: 23px;
-    }
-    #descripcion_footer .descripcion-footer_text{
-        font-size: 18px;
-    }
-    #acceso_rapido .acceso-rapido_title {
-        font-size: 23px;
-    }
-    #acceso_rapido .acceso-rapido_lista {
-        font-size: 18px;
-    }
-    #descripcion_footer {
-        margin-top: 150px;
-    }
-    #acceso_rapido {
-        margin-top: 150px;
-    }
-    #logo_footer {
-        margin-top: 150px;
-    }
-}
-
-@media (max-width:1024px) {
-    #descripcion_footer .descripcion-footer_title{
-        font-size: 20px;
-    }
-    #descripcion_footer .descripcion-footer_text{
-        font-size: 15px;
-    }
-    #acceso_rapido .acceso-rapido_title {
-        font-size: 20px;
-    }
-    #acceso_rapido .acceso-rapido_lista {
-        font-size: 15px;
-    }
-    #logo_footer{
-        transform: translate(-20px);
-    }
-}
-
-@media (max-width:768px){
-    #acceso_rapido{
-        display: none;
-    }
-    #v-line {
-        display: none;
-    }
-    #descripcion_footer{
-        width: 80%;
-    }
-    #descripcion_footer .descripcion-footer_title, .descripcion-footer_text {
-        width: 100%;
-    }
-    #logo_footer{
-        transform: translate(-83px);
-    }
-    #derechos h4{
-        font-size: 12px;
-    }
-    #hopday_derechos {
-        font-size: 16px;    
-    }
-    #designedby h4 {
-        font-size: 12px;
-    }
-    #designedby img {
-    height: 30px;
-    margin-left: 3px;
-    }
-}
-
-@media (max-width:590px){
-
-}
-
-@media (max-width:425px){
-    .footer{
-        height: 400px;
-    }
-    .footerContenido{
-        width: 90%;
-    }
-    #descripcion_footer .descripcion-footer_title {
-        font-size: 18px;
-    }
-    #descripcion_footer .descripcion-footer_text {
-        font-size: 15px;
-    }
-    #logo_footer {
-        transform: translate(-70px);
-    }
-    #logo_footer img{
-        width: 300px;
-        height: 300px;
-    }
-    #derechos h4{
-        font-size: 8px;
-    }
-    #hopday_derechos {
-        font-size: 12px;    
-    }
-    #designedby h4 {
-        font-size: 8px;
-    }
-    #designedby img {
-    height: 25px;
-    margin-left: 3px;
-    }
-}
-
-@media (max-width:375px){
-    #descripcion_footer .descripcion-footer_title {
-        font-size: 15px;
-    }
-    #descripcion_footer .descripcion-footer_text {
-        font-size: 12px;
-    }
-    #derechos h4{
-        font-size: 7px;
-        font-weight: 100;
-    }
-    #hopday_derechos {
-        font-size: 11px;    
-    }
-    #designedby h4 {
-        font-size: 7px;
-        font-weight: 100;
-    }
-}
-
-@media (max-width:320px){
-    #descripcion_footer .descripcion-footer_title {
-        font-size: 13px;
-    }
-    #descripcion_footer .descripcion-footer_text {
-        font-size: 10px;
-    }
-    #logo_footer img{
-        width: 250px;
-        height: 250px;
-    }
-    #derechos h4{
-        font-size: 6px;
-        font-weight: 100;
-    }
-    #hopday_derechos {
-        font-size: 8px;    
-    }
-    #designedby h4 {
-        font-size: 6px;
-        font-weight: 100;
-    }
-    #designedby img {
-    height: 20px;
-    }
+@font-face {
+    font-family: ShareTechMono;
+    src: url(../fonts/ShareTechMono-Regular.ttf);
 }
