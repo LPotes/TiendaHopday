@@ -1,0 +1,229 @@
+@media (max-width:1440px) {
+    #carrito {
+        #carritoBackground {
+            width: 90%;
+            #carritoBox {
+                #carritoBox3 {
+                    #botonSiguiente {
+                        #siguiente {
+                            font-size: 35px;
+                        }
+                    }                
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #carrito {
+        #carritoBackground {
+            padding: 200px 40px 50px;
+            border-radius: 35px;
+            margin-top: 40px;
+            #carritoTextBox {
+                #carritoTitle {
+                    font-size: 80px;
+                }
+            }
+            #carritoBox {
+                #carritoBox1 {
+                    #descuentoBox {
+                        #descuentoText {
+                            transform: translateX(-21%);
+                        }
+                        #descuentoForm {
+                            margin-left: 10px;
+                            #descuentoInput {
+                                width: 240px;
+                                &::placeholder {
+                                    left: 37%;
+                                }
+                            }
+                            #descuentoAplicar {
+                                font-family: 'Keania One';
+                                border: solid #484848 1px;
+                                border-radius: 5px;
+                                height: 40px;
+                                width: 70px;
+                                margin-left: 8px;
+                            }
+                        }
+                    }
+                    #carritoPrecio {
+                        #carritoPrecioDato {
+                            font-size: 18px;
+                        }
+                        #carritoPrecioMonto {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                #carritoBox2 {
+                    #productosCarrito {
+                        grid-template-columns: repeat(2, 1fr);
+                        height: auto;
+                    }
+                }
+                #carritoBox3 {
+                    #botonSiguiente {
+                        #siguiente {
+                            height: 75px;
+                            font-size: 25px;
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #carrito {
+        #carritoBackground {
+            padding: 100px 30px 115px;
+            border-radius: 30px;
+            margin-top: 30px;
+            #carritoTextBox {
+                top: 20px;
+                #carritoTitle {
+                    font-size: 50px;
+                }
+            }
+            #carritoBox {
+                height: 1120px;
+                #carritoBox1 {
+                    margin-bottom: 30px;
+                    #descuentoBox {
+                        #descuentoText {
+                            font-size: 12px;
+                            transform: translateX(-20%);
+                        }
+                        #descuentoForm {
+                            margin-left: 0;
+                            #descuentoInput {
+                                width: 110px;
+                                height: 40px;
+                                &::placeholder {
+                                    font-size: 12px;
+                                    left: 48%;
+                                }
+                            }
+                            #descuentoAplicar {
+                                height: 20px;
+                                width: 40px;
+                                margin-left: 0;
+                                font-size: 10px;
+                                transform: translateY(-2px);
+                            }
+                        }
+                    }
+                    #carritoPrecio {
+                        margin: 0;
+                        #carritoPrecioDato {
+                            font-size: 12px;
+                        }
+                        #carritoPrecioMonto {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                #carritoBox2 {
+                    #productosCarrito {
+                        grid-template-columns: repeat(2, 1fr);
+                        height: auto;
+                    }
+                }
+                #carritoBox3 {
+                    #shopline {
+                        display: none;
+                    }
+                    #botonSiguiente {
+                        #siguiente {
+                            bottom: 35px;
+                            right: 30px;
+                            width: 130px;
+                            font-size: 25px;
+                            border-radius: 5px;
+                            height: 50px;
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    #carrito {
+        #carritoBackground {
+            padding: 80px 20px 80px;
+            border-radius: 25px;
+            margin-top: 25px;
+            #carritoTextBox {
+                top: 15px;
+                #carritoTitle {
+                    font-size: 40px;
+                }
+            }
+            #carritoBox {
+                height: 2165px;
+                #carritoBox1 {
+                    margin-bottom: 20px;
+                    #descuentoBox {
+                        #descuentoText {
+                            font-size: 10px;
+                            transform: translateX(-22%);
+                        }
+                        #descuentoForm {
+                            #descuentoInput {
+                                width: 90px;
+                                height: 35px;
+                                border-radius: 7px;
+                                &::placeholder {
+                                    font-size: 10px;
+                                    left: 48%;
+                                }
+                            }
+                            #descuentoAplicar {
+                                width: 35px;
+                                font-size: 9px;
+                                transform: translateY(-1.5px);
+                            }
+                        }
+                    }
+                    #carritoPrecio {
+                        #carritoPrecioDato {
+                            font-size: 10px;
+                        }
+                        #carritoPrecioMonto {
+                            font-size: 10px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                #carritoBox2 {
+                    #productosCarrito {
+                        grid-template-columns: 1fr;
+                        height: auto;
+                    }
+                }
+                #carritoBox3 {
+                    #shopline {
+                        display: none;
+                    }
+                    #botonSiguiente {
+                        #siguiente {
+                            bottom: 35px;
+                            right: 30px;
+                            width: 130px;
+                            font-size: 25px;
+                            border-radius: 5px;
+                            height: 50px;
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}

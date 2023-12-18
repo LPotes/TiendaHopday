@@ -1,137 +1,124 @@
-.contactoBody {
-    background-color: #000;
-}
 #contactoBackground {
     height: 100%;
     width: 100%;
     background-image: url('../images/Bgdegradado.jpg');
     background-size: 100% 100%;
-}
-.contactanos {
-    margin: 10%;
-    margin-top: 2%;
-}
-.contactanos article {
-    position: relative;
-    background-color: #EAEAEA;
-    border-radius: 50px;
-    padding: 225px 7% 225px;
-    z-index: 10;
-    margin-bottom: -260px;
-}
-.boxContactanos {
     display: flex;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translatex(-50%);
-}
-.contactanos h1 {
-    font-size: 100px;
-    font-family: 'Kenia';
-    font-weight: 100;
-}
-.contactanos form {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 12px;
-}
-.contactanos form input {
-    position: relative;
-}
-.contactanos form textarea {
-    position: relative;
-    resize: none;
-}
-.contactanos form input {
-    height: 50px;
-}
-.contactanos form input::placeholder {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-}
-.contactanos form textarea::placeholder {
-    position: absolute;
-    transform: translate(20%, 50%);
-    font-size: 2em;
-}
-.boxBotones {
-    position: absolute;
-    display: flex;
-    bottom: 53px;
-    right: 7%;
-    width: 520px;
-    height: 100px;
-    justify-content: space-between;
-}
-
-#nombre {
-    grid-column: 1/4;
-    border: 0;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-#apellido {
-    grid-column: 4/7;
-    border: 0;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-#dni {
-    grid-column: 1/3;
-    border: 0;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-#telefono {
-    grid-column: 3/5;
-    border: 0;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-#email {
-    grid-column: 5/7;
-    border: 0;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-#consulta {
-    grid-column: 1/7;
-    border: 0;
-    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-    overflow-y: auto;
-}
-#enviar {
-    width: 250px;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #FFF736;
-    font-family: 'kenia';
-    font-size: 40px;
-    font-weight: 1;
-    color: #000;
-    border: 0;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
-    transition: .3s;
-}
-#enviar:hover {
-    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
-    transform: translate(-2px, -2px);
-    transition: .3s;
-}
-#cancelar {
-    width: 250px;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(72, 72, 72, 0.5);
-    font-family: 'kenia';
-    font-size: 40px;
-    font-weight: 1;
-    color: #000;
-    border: 0;
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
-    transition: .3s;
-}
-#cancelar:hover {
-    box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
-    transform: translate(-2px, -2px);
-    transition: .3s;
+    justify-content: center;
+    #contactoContenido {
+        width: 70%;
+        margin-top: 50px;
+        position: relative;
+        background-color: #EAEAEA;
+        border-radius: 50px;
+        padding: 225px 50px 225px;
+        z-index: 10;
+        #contactanosTextBox {
+            display: flex;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translatex(-50%);
+            #contactanosText {
+                font-size: 100px;
+                font-family: 'Keania One';
+                font-weight: 100;
+                margin: 0px;
+            }
+        }
+        #contactoFormulario {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 12px;
+            & input {
+                height: 50px;
+                border-radius: 3px;
+                box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+                border: 0;
+                &::placeholder {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 2em;
+                }
+            }
+            & textarea {
+                resize: none;
+                border-radius: 3px;
+                height: 400px;
+                box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+                border: 0;
+                &::placeholder {
+                    position: absolute;
+                    transform: translate(28%, 50%);
+                    font-size: 2em;
+                }
+            }
+            #nombre {
+                grid-column: 1/4;
+            }
+            #apellido {
+                grid-column: 4/7;
+            }
+            #dni {
+                grid-column: 1/3;
+            }
+            #telefono {
+                grid-column: 3/5;
+            }
+            #email {
+                grid-column: 5/7;
+            }
+            #consulta {
+                grid-column: 1/7;
+                overflow-y: auto;
+            }
+            #boxBotones {
+                position: absolute;
+                display: flex;
+                bottom: 50px;
+                right: 50px;
+                width: 520px;
+                height: 100px;
+                justify-content: space-between;
+                #enviar {
+                    width: 250px;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: #FFF736;
+                    font-family: 'Keania One';
+                    font-size: 40px;
+                    font-weight: 1;
+                    color: #000;
+                    border: 0;
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+                    transition: .3s;
+                    &:hover {
+                        box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
+                        transform: translate(-2px, -2px);
+                        transition: .3s;
+                    }
+                }
+                #cancelar {
+                    width: 250px;
+                    height: 100%;
+                    border-radius: 10px;
+                    background-color: rgba(72, 72, 72, 0.5);
+                    font-family: 'Keania One';
+                    font-size: 40px;
+                    font-weight: 1;
+                    color: #000;
+                    border: 0;
+                    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+                    transition: .3s;
+                    &:hover {
+                        box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
+                        transform: translate(-2px, -2px);
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+    }
 }

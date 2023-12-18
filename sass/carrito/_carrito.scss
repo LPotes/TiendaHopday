@@ -10,7 +10,7 @@
         position: relative;
         background-color: #EAEAEA;
         border-radius: 50px;
-        padding: 225px 7% 225px;
+        padding: 225px 50px 50px;
         z-index: 10;
         margin-top: 50px;
         width: 70%;
@@ -20,10 +20,9 @@
             top: 50px;
             left: 50%;
             transform: translatex(-50%);
-            width: 722px;
             #carritoTitle {
                 font-size: 100px;
-                font-family: 'Kenia';
+                font-family: 'Keania One';
                 font-weight: 100;
                 margin: 0px;
             }
@@ -34,19 +33,60 @@
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
+                margin-bottom: 50px;
                 #descuentoBox {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
                     #descuentoText {
+                        font-size: 20px;
+                        font-family: 'Keania One';
+                        transform: translateX(-9%);
                     }
                     #descuentoForm {
+                        margin-left: 50px;
+                        #descuentoInput {
+                            background-color: #D9D9D9;
+                            border-radius: 10px; 
+                            height: 60px;
+                            width: 270px;
+                            border: 0;
+                            box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.3);
+                            &::placeholder {
+                                position: absolute;
+                                top: 50%;
+                                left: 33%;
+                                transform: translate(-50%, -50%);
+                                font-size: 20px;
+                            }
+                        }
+                        #descuentoAplicar {
+                            font-family: 'Keania One';
+                            border: solid #484848 1px;
+                            border-radius: 5px;
+                            height: 40px;
+                            width: 70px;
+                            margin-left: 8px;
+                        }
                     }
                 }
                 #carritoPrecio {
                     display: flex;
+                    align-items: center;
+                    margin-right: 10px;
                     #carritoPrecioDato {
                         padding: 0;
+                        margin: 0;
+                        font-size: 20px;
                     }
                     #carritoPrecioMonto {
                         padding-left: 30px;
+                        font-size: 20px;
+                        margin: 0;
+                        #carritoPrecioMontoDescuento {
+                            color: rgb(158, 12, 12);
+                        }
                     }
                 }
             }
@@ -61,88 +101,100 @@
                         justify-content: center;
                         align-items: center;
                         background-color: #ffffff;
-                        height: 500PX;
+                        height: 500px;
                         border-radius: 30px;
                         box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+                        &:hover {
+                            transform: scale(1.07);
+                            transition: .3s;
+                        }
+                        transition: .3s;
                     }
                 }
             }
             #carritoBox3 {
                 display: flex;
-                #shopline1 {
+                margin-top: 50px;
+                width: 100%;
+                #shopline {
                     display: flex;
-                    position: absolute;
-                    width: 64%;
                     height: 100px;
-                    bottom: 70px;
+                    width: 100%;
                     justify-content: space-between;
                     .shoplineEtapas {
                         display: flex;
+                        flex-direction: column;
                         width: 30%;
                         height: 100%;
                         justify-content: center;
                         align-items: center;
                         #shoplineEtapasCarrito {
-                            
+                            color: #9e4ab3;
                         }
                         #shoplineEtapasDatos {
-
+                            color: #484848;
                         }
                         #shoplineEtapasPago {
-                            
+                            color: #484848;
                         }
-                    }
-                }
-                #shopline2 {
-                    display: flex;
-                    position: absolute;
-                    width: 86%;
-                    justify-content: space-around;
-                    align-items: center;
-                    padding: 16px;
-                    height: 100px;
-                    bottom: 53px;
-                    .shoplineHrBox {
-                        width: 20%;
-                        .shoplineHr {
-                            width: 100%;
+                        #shoplineEtapasText4 {
+                            color: transparent;
+                        }
+                        #shoplineHrCarrito {
+                            width: 90%;
                             height: 1px;
                             margin: 0;
+                            background-color: #9e4ab3;
+                        }
+                        #shoplineHrDatos {
+                            @extend #shoplineHrCarrito ;
                             background-color: #484848;
                         }
-                        .shoplineHr4 {
-                            display: none;
+                        #shoplineHrPago {
+                            @extend #shoplineHrCarrito ;
+                            background-color: #484848;
+                        }
+                        #shoplineHr4 {
+                            width: 100%;
+                            background-color: transparent;
                         }
                     }
                     .shoplineCircleBox {
+                        display: flex;
+                        align-items: center;
                         .shoplineCircle {
                             height: 30px;
                             width: 30px;
                             background-color: #D9D9D9;
                             border-radius: 100px;
                             border: 1px solid #484848;
+                            transform: translateY(50%);
                         }
-                        .shoplineCircle3 {
-                            display: none;
+                        #shoplineCircle3 {
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 100px;
+                            transform: translateY(50%);
+                            background-color: transparent;
                         }
                     }
                 }
                 #botonSiguiente {
                     #siguiente {
                         position: absolute;
-                        width: 250px;
+                        width: 20%;
                         height: 100px;
                         border-radius: 10px;
                         background-color: #FFF736;
-                        font-family: 'kenia';
+                        font-family: 'Keania One';
                         font-size: 40px;
                         font-weight: 1;
                         color: #000;
                         border: 0;
                         box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
                         transition: .3s;
-                        right: 7%;
-                        bottom: 53px;
+                        right: 50px;
+                        bottom: 50px;
                     }
                 }                
             }

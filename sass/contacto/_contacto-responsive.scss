@@ -1,0 +1,188 @@
+@media (max-width:1440px) {
+    #contactoBackground {
+        #contactoContenido {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    #contactoBackground {
+        #contactoContenido {
+            padding: 200px 40px 170px;
+            border-radius: 35px;
+            margin-top: 40px;
+            #contactanosTextBox {
+                #contactanosText {
+                    font-size: 80px;
+                    margin: 0;
+                }
+            }
+            #contactoFormulario {
+                & input {
+                    height: 45px;
+                    &::placeholder {
+                        font-size: 1.5em;
+                    }
+                }
+                & textarea {
+                    height: 350px;
+                    &::placeholder {
+                        font-size: 1.5em;
+                    }
+                }
+                #boxBotones {
+                    bottom: 40px;
+                    right: 40px;
+                    width: 420px;
+                    height: 75px;
+                    #enviar {
+                        width: 200px;
+                        font-size: 35px;
+                    }
+                    #cancelar {
+                        width: 200px;
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #contactoBackground {
+        #contactoContenido {
+            padding: 150px 30px 130px;
+            border-radius: 30px;
+            margin-top: 30px;
+            #contactanosTextBox {
+                top: 40px;
+                #contactanosText {
+                    font-size: 50px;
+                }
+            }
+            #contactoFormulario {
+                & input {
+                    height: 35px;
+                    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3);
+                    &::placeholder {
+                        font-size: 1em;
+                    }
+                }
+                & textarea {
+                    height: 250px;
+                    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3);
+                    &::placeholder {
+                        font-size: 1em;
+                    }
+                }
+                #boxBotones {
+                    bottom: 35px;
+                    right: 30px;
+                    width: 270px;
+                    height: 50px;
+                    #enviar {
+                        width: 130px;
+                        font-size: 25px;
+                        border-radius: 5px;
+                    }
+                    #cancelar {
+                        width: 130px;
+                        font-size: 25px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    #contactoBackground {
+        #contactoContenido {
+            padding: 80px 20px 80px;
+            border-radius: 25px;
+            margin-top: 25px;
+            #contactanosTextBox {
+                top: 15px;
+                #contactanosText {
+                    font-size: 40px;
+                }
+            }
+            #contactoFormulario {
+                gap: 7px;
+                & input {
+                    height: 30px;
+                    &::placeholder {
+                        font-size: .8em;
+                    }
+                }
+                & textarea {
+                    height: 200px;
+                    &::placeholder {
+                        font-size: .8em;
+                    }
+                }
+                #boxBotones {
+                    bottom: 20px;
+                    right: 20px;
+                    width: 205px;
+                    height: 35px;
+                    #enviar {
+                        width: 100px;
+                        font-size: 20px;
+                    }
+                    #cancelar {
+                        width: 100px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    #contactoBackground {
+        #contactoContenido {
+            padding: 70px 20px 70px;
+            border-radius: 25px;
+            margin-top: 20px;
+            #contactanosTextBox {
+                top: 15px;
+                #contactanosText {
+                    font-size: 35px;
+                }
+            }
+            #contactoFormulario {
+                & input {
+                    height: 25px;
+                    &::placeholder {
+                        font-size: .7em;
+                    }
+                }
+                & textarea {
+                    height: 200px;
+                    &::placeholder {
+                        font-size: .7em;
+                    }
+                }
+                #boxBotones {
+                    bottom: 20px;
+                    right: 20px;
+                    width: 165px;
+                    height: 35px;
+                    #enviar {
+                        width: 80px;
+                        font-size: 15px;
+                    }
+                    #cancelar {
+                        width: 80px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

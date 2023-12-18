@@ -1,0 +1,77 @@
+@media (max-width:1024px) {
+    #datos {
+        #datosContenido {
+            width: 90%;
+            margin-top: -60px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #datos {
+        #datosContenido {
+            margin-top: -45px;
+            .datoBox1 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    .datoTitle {
+                        font-size: 25px;
+                    }
+                    .datoContent {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .datoBox2 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    .datoTitle {
+                        font-size: 25px;
+                    }
+                    .datoContent {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    #datos {
+        #datosContenido {
+            padding: 15px;
+            gap: 7.5px;
+            margin-top: -30px;
+            border-radius: 40px;
+            .datoBox1 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    padding: 15px;
+                    .datoTitle {
+                        font-size: 20px;
+                    }
+                    .datoContent {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .datoBox2 {
+                .dato {
+                    width: 100%;
+                    min-width: 0;
+                    padding: 15px;
+                    .datoTitle {
+                        font-size: 20px;
+                    }
+                    .datoContent {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

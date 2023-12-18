@@ -1,24 +1,33 @@
-@import "header";
-@import "footer";
-@import "banner";
-@import "reset";
+@import "header/header";
+@import "header/header-responsive";
+
+@import "banner/banner";
+
+@import "footer/footer";
+@import "footer/footer-responsive";
+
+@import "reset/reset";
+
+
 
 @import "tienda/tienda";
+@import "tienda/tienda-responsive";
+
 @import "nosotros/nosotros";
+@import "nosotros/nosotros-responsive";
+
 @import "consultas/consultas";
+@import "consultas/consultas-responsive";
+
 @import "contacto/contacto";
+@import "contacto/contacto-responsive";
+
 @import "carrito/carrito";
+@import "carrito/carrito-responsive";
+
 
 
 @font-face {
     font-family: KeaniaOne;
     src: url(../fonts/KeaniaOne-Regular.ttf);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: ShareTechMono;
-    src: url(../fonts/ShareTechMono-Regular.ttf);
 }

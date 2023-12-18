@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Curso Coder</title>
+        <meta name="description" content="Explora y gestiona los productos de tu carrito en Hopday. Añade, elimina o actualiza tus selecciones de componentes de computadora antes de finalizar tu compra. ¡Optimiza tu experiencia de compra en línea con nuestro carrito fácil de usar!">
+        <meta name="keywords" content="Carrito de compras, Carrito, Compras en línea, Componentes de computadora, Gestión de compras, Actualizar carrito, Finalizar compra, Experiencia de compra en línea, Optimización de compras">
+        <link rel="icon" href="../images/LOGO-Marca.png" type="image/x-icon">
+
+        <title>Carrito - Hopday</title>
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,8 +50,8 @@
                 </ul>
             </nav>                
             <div id="boxRedes">
-                <a class="redes" href="whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a class="redes" href="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="redes" target="_blank" href="https://www.whatsapp.com/?lang=es_LA"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a class="redes" target="_blank" href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
             </div>
         </div>
     </header>
@@ -58,14 +63,14 @@
         <div id="carrito">
             <section id="carritoBackground">
                 <div id="carritoTextBox">
-                    <h1 id="carritoTitle">Carrito de Compras</h1>
+                    <h1 id="carritoTitle">Carrito</h1>
                 </div>
                 <div id="carritoBox">
                     <div id="carritoBox1">
                         <div id="descuentoBox">
                             <h3 id="descuentoText">Cupon de descuento:</h3>
                             <form action="#" id="descuentoForm">
-                                <input type="text" id="descuentoInput">
+                                <input type="text" id="descuentoInput" placeholder="Ingresa tu cupón">
                                 <input type="submit" id="descuentoAplicar" value="Aplicar">
                             </form>
                         </div>
@@ -79,7 +84,7 @@
                             <ul id="carritoPrecioMonto">
                                 <li>$328.500</li>
                                 <li>$1.500</li>
-                                <li>$10.000</li>
+                                <li id="carritoPrecioMontoDescuento">$10.000</li>
                                 <li>$320.000</li>
                             </ul>
                         </div>
@@ -93,38 +98,31 @@
                         </div>
                     </div>
                     <div id="carritoBox3">
-                        <div id="shopline1">
+                        <div id="shopline">
                             <div class="shoplineEtapas">
                                 <h6 id="shoplineEtapasCarrito">Carrito</h6>
+                                <div id="shoplineHrCarrito"></div>
+                            </div>
+                            <div class="shoplineCircleBox">
+                                <div class="shoplineCircle"></div>
                             </div>
                             <div class="shoplineEtapas">
                                 <h6 id="shoplineEtapasDatos">Datos</h6>
+                                <div id="shoplineHrDatos"></div>
+                            </div>
+                            <div class="shoplineCircleBox">
+                                <div class="shoplineCircle"></div>
                             </div>
                             <div class="shoplineEtapas">
                                 <h6 id="shoplineEtapasPago">Pago</h6>
-                            </div>
-                        </div>
-                        <div id="shopline2">
-                            <div class="shoplineHrBox">
-                                <div class="shoplineHr"></div>
+                                <div id="shoplineHrPago"></div>
                             </div>
                             <div class="shoplineCircleBox">
-                                <div class="shoplineCircle"></div>
+                                <div id="shoplineCircle3"></div>
                             </div>
-                            <div class="shoplineHrBox">
-                                <div class="shoplineHr"></div>
-                            </div>
-                            <div class="shoplineCircleBox">
-                                <div class="shoplineCircle"></div>
-                            </div>
-                            <div class="shoplineHrBox">
-                                <div class="shoplineHr"></div>
-                            </div>
-                            <div class="shoplineCircleBox">
-                                <div class="shoplineCircle shoplineCircle3"></div>
-                            </div>
-                            <div class="shoplineHrBox">
-                                <div class="shoplineHr shoplineHr4"></div>
+                            <div class="shoplineEtapas">
+                                <h6 id="shoplineEtapasText4"></h6>
+                                <div id="shoplineHr4"></div>
                             </div>
                         </div>
                         <div id="botonSiguiente">

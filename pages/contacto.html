@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Curso Coder</title>
+        <meta name="description" content="Contacta con Hopday para obtener asistencia experta en componentes de computadora. Completa nuestro formulario de contacto para comunicarte directamente con nuestro equipo. Estamos aquí para ayudarte en todas tus necesidades informáticas.">
+        <meta name="keywords" content="Contacto Hopday, Formulario de contacto, Soporte técnico, Consultas de productos, Información de contacto, Ayuda con componentes de computadora, Comunicación con el equipo, Asistencia técnica, Servicio al cliente, Consultas comerciales">
+        <link rel="icon" href="../images/LOGO-Marca.png" type="image/x-icon">
+
+        <title>Contacto - Hopday</title>
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,8 +50,8 @@
                 </ul>
             </nav>                
             <div id="boxRedes">
-                <a class="redes" href="whatsapp"><ion-icon name="logo-whatsapp"></ion-icon></a>
-                <a class="redes" href="instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="redes" target="_blank" href="https://www.whatsapp.com/?lang=es_LA"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                <a class="redes" target="_blank" href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
             </div>
         </div>
     </header>
@@ -56,24 +61,22 @@
     <!--Main Start-->
     <main>
         <div id="contactoBackground">
-            <section class="contactanos">
-                <article>
-                    <div class="boxContactanos">
-                        <h1 id="contactanos">Contactanos</h1>
+            <section id="contactoContenido">
+                <div id="contactanosTextBox">
+                    <h1 id="contactanosText">Contactanos</h1>
+                </div>
+                <form id="contactoFormulario" action="#">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre:"> 
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido:">
+                    <input type="number" name="dni" id="dni" placeholder="DNI:">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Telefono:">
+                    <input type="email" name="email" id="email" placeholder="Email:">
+                    <textarea name="consulta" id="consulta" placeholder="Consulta:"></textarea>                   
+                    <div id="boxBotones">
+                        <input type="reset" name="cancelar" id="cancelar" value="Cancelar">
+                        <input type="submit" name="enviar" id="enviar">
                     </div>
-                    <form action="#">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre:"> 
-                        <input type="text" name="apellido" id="apellido" placeholder="Apellido:">
-                        <input type="number" name="dni" id="dni" placeholder="DNI:">
-                        <input type="tel" name="telefono" id="telefono" placeholder="Telefono:">
-                        <input type="email" name="email" id="email" placeholder="Email:">
-                        <textarea name="consulta" id="consulta" rows="30" cols="50" placeholder="Consulta:"></textarea>                   
-                        <div class="boxBotones">
-                            <input type="reset" name="cancelar" id="cancelar" value="Cancelar">
-                            <input type="submit" name="enviar" id="enviar">
-                        </div>
-                    </form> 
-                </article>
+                </form> 
             </section>
         </div>
     </main>

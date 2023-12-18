@@ -82,7 +82,6 @@
   color: #000;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1440px) {
   #header #headerContenido {
     display: grid;
@@ -184,6 +183,13 @@
     display: none;
   }
 }
+#banner {
+  width: 100%;
+}
+#banner #bannerVideoBox {
+  width: 100%;
+}
+
 #footer {
   display: flex;
   position: relative;
@@ -300,7 +306,6 @@
   margin-left: 3px;
 }
 
-/*RESPONSIVE*/
 @media (max-width: 1440px) {
   #footer #footerContenido #footer-1 #footerLogo {
     transform: translate(-35px);
@@ -441,13 +446,6 @@
     font-weight: 100;
   }
 }
-#banner {
-  width: 100%;
-}
-#banner #bannerVideoBox {
-  width: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -585,6 +583,11 @@ body {
   height: 500px;
   border-radius: 30px;
   box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+#tienda #tiendaContenido #productos .producto:hover {
+  transform: scale(1.07);
+  transition: 0.3s;
 }
 #tienda #tiendaContenido #paginasTienda {
   display: flex;
@@ -635,7 +638,6 @@ body {
   transition: 0.2s;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1440px) {
   #tienda #tiendaContenido #filtrosBoxContenedor #filtrosBox #textTinedaBox {
     display: none;
@@ -816,7 +818,6 @@ body {
   padding: 10px;
 }
 
-/*RESPONSIVE*/
 @media (max-width: 1024px) {
   #datos #datosContenido {
     width: 90%;
@@ -929,7 +930,6 @@ body {
   padding: 10px;
 }
 
-/*RESPONSIVE*/
 @media (max-width: 1024px) {
   #preguntas #preguntasContenido {
     width: 90%;
@@ -966,131 +966,100 @@ body {
     font-size: 10PX;
   }
 }
-.contactoBody {
-  background-color: #000;
-}
-
 #contactoBackground {
   height: 100%;
   width: 100%;
   background-image: url("../images/Bgdegradado.jpg");
   background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
 }
-
-.contactanos {
-  margin: 10%;
-  margin-top: 2%;
-}
-
-.contactanos article {
+#contactoBackground #contactoContenido {
+  width: 70%;
+  margin-top: 50px;
   position: relative;
   background-color: #EAEAEA;
   border-radius: 50px;
-  padding: 225px 7% 225px;
+  padding: 225px 50px 225px;
   z-index: 10;
-  margin-bottom: -260px;
 }
-
-.boxContactanos {
+#contactoBackground #contactoContenido #contactanosTextBox {
   display: flex;
   position: absolute;
   top: 50px;
   left: 50%;
   transform: translatex(-50%);
 }
-
-.contactanos h1 {
+#contactoBackground #contactoContenido #contactanosTextBox #contactanosText {
   font-size: 100px;
-  font-family: "Kenia";
+  font-family: "Keania One";
   font-weight: 100;
+  margin: 0px;
 }
-
-.contactanos form {
+#contactoBackground #contactoContenido #contactoFormulario {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 12px;
 }
-
-.contactanos form input {
-  position: relative;
-}
-
-.contactanos form textarea {
-  position: relative;
-  resize: none;
-}
-
-.contactanos form input {
+#contactoBackground #contactoContenido #contactoFormulario input {
   height: 50px;
+  border-radius: 3px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border: 0;
 }
-
-.contactanos form input::placeholder {
+#contactoBackground #contactoContenido #contactoFormulario input::placeholder {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2em;
 }
-
-.contactanos form textarea::placeholder {
+#contactoBackground #contactoContenido #contactoFormulario textarea {
+  resize: none;
+  border-radius: 3px;
+  height: 400px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+#contactoBackground #contactoContenido #contactoFormulario textarea::placeholder {
   position: absolute;
-  transform: translate(20%, 50%);
+  transform: translate(28%, 50%);
   font-size: 2em;
 }
-
-.boxBotones {
+#contactoBackground #contactoContenido #contactoFormulario #nombre {
+  grid-column: 1/4;
+}
+#contactoBackground #contactoContenido #contactoFormulario #apellido {
+  grid-column: 4/7;
+}
+#contactoBackground #contactoContenido #contactoFormulario #dni {
+  grid-column: 1/3;
+}
+#contactoBackground #contactoContenido #contactoFormulario #telefono {
+  grid-column: 3/5;
+}
+#contactoBackground #contactoContenido #contactoFormulario #email {
+  grid-column: 5/7;
+}
+#contactoBackground #contactoContenido #contactoFormulario #consulta {
+  grid-column: 1/7;
+  overflow-y: auto;
+}
+#contactoBackground #contactoContenido #contactoFormulario #boxBotones {
   position: absolute;
   display: flex;
-  bottom: 53px;
-  right: 7%;
+  bottom: 50px;
+  right: 50px;
   width: 520px;
   height: 100px;
   justify-content: space-between;
 }
-
-#nombre {
-  grid-column: 1/4;
-  border: 0;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#apellido {
-  grid-column: 4/7;
-  border: 0;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#dni {
-  grid-column: 1/3;
-  border: 0;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#telefono {
-  grid-column: 3/5;
-  border: 0;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#email {
-  grid-column: 5/7;
-  border: 0;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#consulta {
-  grid-column: 1/7;
-  border: 0;
-  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-  overflow-y: auto;
-}
-
-#enviar {
+#contactoBackground #contactoContenido #contactoFormulario #boxBotones #enviar {
   width: 250px;
   height: 100%;
   border-radius: 10px;
   background-color: #FFF736;
-  font-family: "kenia";
+  font-family: "Keania One";
   font-size: 40px;
   font-weight: 1;
   color: #000;
@@ -1098,19 +1067,17 @@ body {
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
-
-#enviar:hover {
+#contactoBackground #contactoContenido #contactoFormulario #boxBotones #enviar:hover {
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
   transform: translate(-2px, -2px);
   transition: 0.3s;
 }
-
-#cancelar {
+#contactoBackground #contactoContenido #contactoFormulario #boxBotones #cancelar {
   width: 250px;
   height: 100%;
   border-radius: 10px;
   background-color: rgba(72, 72, 72, 0.5);
-  font-family: "kenia";
+  font-family: "Keania One";
   font-size: 40px;
   font-weight: 1;
   color: #000;
@@ -1118,13 +1085,178 @@ body {
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
 }
-
-#cancelar:hover {
+#contactoBackground #contactoContenido #contactoFormulario #boxBotones #cancelar:hover {
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.3);
   transform: translate(-2px, -2px);
   transition: 0.3s;
 }
 
+@media (max-width: 1440px) {
+  #contactoBackground #contactoContenido {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  #contactoBackground #contactoContenido {
+    padding: 200px 40px 170px;
+    border-radius: 35px;
+    margin-top: 40px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox #contactanosText {
+    font-size: 80px;
+    margin: 0;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input {
+    height: 45px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input::placeholder {
+    font-size: 1.5em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea {
+    height: 350px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea::placeholder {
+    font-size: 1.5em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones {
+    bottom: 40px;
+    right: 40px;
+    width: 420px;
+    height: 75px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #enviar {
+    width: 200px;
+    font-size: 35px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #cancelar {
+    width: 200px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  #contactoBackground #contactoContenido {
+    padding: 150px 30px 130px;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox {
+    top: 40px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox #contactanosText {
+    font-size: 50px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input {
+    height: 35px;
+    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3);
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input::placeholder {
+    font-size: 1em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea {
+    height: 250px;
+    box-shadow: inset 3px 3px 7px rgba(0, 0, 0, 0.3);
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea::placeholder {
+    font-size: 1em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones {
+    bottom: 35px;
+    right: 30px;
+    width: 270px;
+    height: 50px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #enviar {
+    width: 130px;
+    font-size: 25px;
+    border-radius: 5px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #cancelar {
+    width: 130px;
+    font-size: 25px;
+    border-radius: 5px;
+  }
+}
+@media (max-width: 425px) {
+  #contactoBackground #contactoContenido {
+    padding: 80px 20px 80px;
+    border-radius: 25px;
+    margin-top: 25px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox {
+    top: 15px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox #contactanosText {
+    font-size: 40px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario {
+    gap: 7px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input {
+    height: 30px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input::placeholder {
+    font-size: 0.8em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea {
+    height: 200px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea::placeholder {
+    font-size: 0.8em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones {
+    bottom: 20px;
+    right: 20px;
+    width: 205px;
+    height: 35px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #enviar {
+    width: 100px;
+    font-size: 20px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #cancelar {
+    width: 100px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  #contactoBackground #contactoContenido {
+    padding: 70px 20px 70px;
+    border-radius: 25px;
+    margin-top: 20px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox {
+    top: 15px;
+  }
+  #contactoBackground #contactoContenido #contactanosTextBox #contactanosText {
+    font-size: 35px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input {
+    height: 25px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario input::placeholder {
+    font-size: 0.7em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea {
+    height: 200px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario textarea::placeholder {
+    font-size: 0.7em;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones {
+    bottom: 20px;
+    right: 20px;
+    width: 165px;
+    height: 35px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #enviar {
+    width: 80px;
+    font-size: 15px;
+  }
+  #contactoBackground #contactoContenido #contactoFormulario #boxBotones #cancelar {
+    width: 80px;
+    font-size: 15px;
+  }
+}
 #carrito {
   display: flex;
   justify-content: center;
@@ -1138,7 +1270,7 @@ body {
   position: relative;
   background-color: #EAEAEA;
   border-radius: 50px;
-  padding: 225px 7% 225px;
+  padding: 225px 50px 50px;
   z-index: 10;
   margin-top: 50px;
   width: 70%;
@@ -1149,11 +1281,10 @@ body {
   top: 50px;
   left: 50%;
   transform: translatex(-50%);
-  width: 722px;
 }
 #carrito #carritoBackground #carritoTextBox #carritoTitle {
   font-size: 100px;
-  font-family: "Kenia";
+  font-family: "Keania One";
   font-weight: 100;
   margin: 0px;
 }
@@ -1164,15 +1295,62 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 50px;
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoText {
+  font-size: 20px;
+  font-family: "Keania One";
+  transform: translateX(-9%);
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm {
+  margin-left: 50px;
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  height: 60px;
+  width: 270px;
+  border: 0;
+  box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoAplicar {
+  font-family: "Keania One";
+  border: solid #484848 1px;
+  border-radius: 5px;
+  height: 40px;
+  width: 70px;
+  margin-left: 8px;
 }
 #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio {
   display: flex;
+  align-items: center;
+  margin-right: 10px;
 }
 #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioDato {
   padding: 0;
+  margin: 0;
+  font-size: 20px;
 }
 #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioMonto {
   padding-left: 30px;
+  font-size: 20px;
+  margin: 0;
+}
+#carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioMonto #carritoPrecioMontoDescuento {
+  color: rgb(158, 12, 12);
 }
 #carrito #carritoBackground #carritoBox #carritoBox2 #productosCarrito {
   display: grid;
@@ -1185,88 +1363,277 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  height: 500PX;
+  height: 500px;
   border-radius: 30px;
   box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+#carrito #carritoBackground #carritoBox #carritoBox2 #productosCarrito .productoCarrito:hover {
+  transform: scale(1.07);
+  transition: 0.3s;
 }
 #carrito #carritoBackground #carritoBox #carritoBox3 {
   display: flex;
+  margin-top: 50px;
+  width: 100%;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline1 {
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline {
   display: flex;
-  position: absolute;
-  width: 64%;
   height: 100px;
-  bottom: 70px;
+  width: 100%;
   justify-content: space-between;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline1 .shoplineEtapas {
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas {
   display: flex;
+  flex-direction: column;
   width: 30%;
   height: 100%;
   justify-content: center;
   align-items: center;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline2 {
-  display: flex;
-  position: absolute;
-  width: 86%;
-  justify-content: space-around;
-  align-items: center;
-  padding: 16px;
-  height: 100px;
-  bottom: 53px;
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineEtapasCarrito {
+  color: #9e4ab3;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline2 .shoplineHrBox {
-  width: 20%;
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineEtapasDatos {
+  color: #484848;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline2 .shoplineHrBox .shoplineHr {
-  width: 100%;
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineEtapasPago {
+  color: #484848;
+}
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineEtapasText4 {
+  color: transparent;
+}
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineHrCarrito, #carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineHrPago, #carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineHrDatos {
+  width: 90%;
   height: 1px;
   margin: 0;
+  background-color: #9e4ab3;
+}
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineHrDatos {
   background-color: #484848;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline2 .shoplineHrBox .shoplineHr4 {
-  display: none;
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineHrPago {
+  background-color: #484848;
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline2 .shoplineCircleBox .shoplineCircle {
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineEtapas #shoplineHr4 {
+  width: 100%;
+  background-color: transparent;
+}
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineCircleBox {
+  display: flex;
+  align-items: center;
+}
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineCircleBox .shoplineCircle {
   height: 30px;
   width: 30px;
   background-color: #D9D9D9;
   border-radius: 100px;
   border: 1px solid #484848;
+  transform: translateY(50%);
 }
-#carrito #carritoBackground #carritoBox #carritoBox3 #shopline2 .shoplineCircleBox .shoplineCircle3 {
-  display: none;
+#carrito #carritoBackground #carritoBox #carritoBox3 #shopline .shoplineCircleBox #shoplineCircle3 {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  transform: translateY(50%);
+  background-color: transparent;
 }
 #carrito #carritoBackground #carritoBox #carritoBox3 #botonSiguiente #siguiente {
   position: absolute;
-  width: 250px;
+  width: 20%;
   height: 100px;
   border-radius: 10px;
   background-color: #FFF736;
-  font-family: "kenia";
+  font-family: "Keania One";
   font-size: 40px;
   font-weight: 1;
   color: #000;
   border: 0;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  right: 7%;
-  bottom: 53px;
+  right: 50px;
+  bottom: 50px;
 }
 
+@media (max-width: 1440px) {
+  #carrito #carritoBackground {
+    width: 90%;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox3 #botonSiguiente #siguiente {
+    font-size: 35px;
+  }
+}
+@media (max-width: 1024px) {
+  #carrito #carritoBackground {
+    padding: 200px 40px 50px;
+    border-radius: 35px;
+    margin-top: 40px;
+  }
+  #carrito #carritoBackground #carritoTextBox #carritoTitle {
+    font-size: 80px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoText {
+    transform: translateX(-21%);
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm {
+    margin-left: 10px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput {
+    width: 240px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput::placeholder {
+    left: 37%;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoAplicar {
+    font-family: "Keania One";
+    border: solid #484848 1px;
+    border-radius: 5px;
+    height: 40px;
+    width: 70px;
+    margin-left: 8px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioDato {
+    font-size: 18px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioMonto {
+    font-size: 18px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox2 #productosCarrito {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox3 #botonSiguiente #siguiente {
+    height: 75px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  #carrito #carritoBackground {
+    padding: 100px 30px 115px;
+    border-radius: 30px;
+    margin-top: 30px;
+  }
+  #carrito #carritoBackground #carritoTextBox {
+    top: 20px;
+  }
+  #carrito #carritoBackground #carritoTextBox #carritoTitle {
+    font-size: 50px;
+  }
+  #carrito #carritoBackground #carritoBox {
+    height: 1120px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 {
+    margin-bottom: 30px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoText {
+    font-size: 12px;
+    transform: translateX(-20%);
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm {
+    margin-left: 0;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput {
+    width: 110px;
+    height: 40px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput::placeholder {
+    font-size: 12px;
+    left: 48%;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoAplicar {
+    height: 20px;
+    width: 40px;
+    margin-left: 0;
+    font-size: 10px;
+    transform: translateY(-2px);
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio {
+    margin: 0;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioDato {
+    font-size: 12px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioMonto {
+    font-size: 12px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox2 #productosCarrito {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox3 #shopline {
+    display: none;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox3 #botonSiguiente #siguiente {
+    bottom: 35px;
+    right: 30px;
+    width: 130px;
+    font-size: 25px;
+    border-radius: 5px;
+    height: 50px;
+  }
+}
+@media (max-width: 425px) {
+  #carrito #carritoBackground {
+    padding: 80px 20px 80px;
+    border-radius: 25px;
+    margin-top: 25px;
+  }
+  #carrito #carritoBackground #carritoTextBox {
+    top: 15px;
+  }
+  #carrito #carritoBackground #carritoTextBox #carritoTitle {
+    font-size: 40px;
+  }
+  #carrito #carritoBackground #carritoBox {
+    height: 2165px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 {
+    margin-bottom: 20px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoText {
+    font-size: 10px;
+    transform: translateX(-22%);
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput {
+    width: 90px;
+    height: 35px;
+    border-radius: 7px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoInput::placeholder {
+    font-size: 10px;
+    left: 48%;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #descuentoBox #descuentoForm #descuentoAplicar {
+    width: 35px;
+    font-size: 9px;
+    transform: translateY(-1.5px);
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioDato {
+    font-size: 10px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox1 #carritoPrecio #carritoPrecioMonto {
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox2 #productosCarrito {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox3 #shopline {
+    display: none;
+  }
+  #carrito #carritoBackground #carritoBox #carritoBox3 #botonSiguiente #siguiente {
+    bottom: 35px;
+    right: 30px;
+    width: 130px;
+    font-size: 25px;
+    border-radius: 5px;
+    height: 50px;
+  }
+}
 @font-face {
   font-family: KeaniaOne;
   src: url(../fonts/KeaniaOne-Regular.ttf);
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: ShareTechMono;
-  src: url(../fonts/ShareTechMono-Regular.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */
