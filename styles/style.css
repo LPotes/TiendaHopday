@@ -539,8 +539,8 @@ body {
   display: flex;
   align-items: center;
 }
-#tienda #tiendaContenido #filtrosBoxContenedor #filtrosBox #filtros .filtro select {
-  font-family: "KeaniaOne";
+#tienda #tiendaContenido #filtrosBoxContenedor #filtrosBox #filtros .filtro .select {
+  font-family: "Keania One";
   font-weight: 100;
   background-color: #875B92;
   border-radius: 7px;
@@ -706,7 +706,7 @@ body {
   #tienda #tiendaContenido #filtrosBoxContenedor #filtrosBox #filtros {
     gap: 5px;
   }
-  #tienda #tiendaContenido #filtrosBoxContenedor #filtrosBox #filtros .filtro select {
+  #tienda #tiendaContenido #filtrosBoxContenedor #filtrosBox #filtros .filtro .select {
     padding: 2px;
     font-size: 10px;
     height: 40px;
